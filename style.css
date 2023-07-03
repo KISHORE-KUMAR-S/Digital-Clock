@@ -1,0 +1,60 @@
+*{
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    color: white;
+}
+#digiclock{
+    top: 150px;
+    left: 150px;
+    right: 150px;
+    bottom: 150px;
+    position: fixed;
+    outline: auto;
+}
+#clock{
+    display: flex;
+    margin: 50px 0;
+}
+#hours, #minutes, #seconds{
+    padding: 10px 30px;
+    font-size: 100px;
+    border-radius: 10px;
+    margin: 0 25px;
+}
+#ddmmyy{
+    display: flex;
+    justify-content: center;
+}
+#dd, #mm, #yy, #week{
+    margin: 0 10px;
+    font-size: x-large;
+}
+@media screen and (max-width: 500px) {
+    *{
+        width: 10%;
+    }
+    #digiclock{
+        top: 40%;
+        bottom: 800px;
+        left: 1px;
+        right: 0px;
+        outline: none;
+    }
+    #clock{
+        display: flex;
+        margin: 0;
+    }
+    #hours, #minutes, #seconds{
+        padding: 0 45px 0 0;
+        font-size: 50px;
+        border-radius: 10px;
+    }
+    #ddmmyy{
+        display: flex;
+        margin-left: 210px;
+    }
+    #dd, #mm, #yy, #week{
+        margin: 0 50px;
+        font-size: x-large;
+    }
+}
